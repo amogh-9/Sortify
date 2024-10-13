@@ -5,16 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorting Visualizer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="nav-bar">
-        <div class="title">Sorting Visualizer</div>
-        <ul class="nav-links">
-            <li><a href="----">About</a></li>
-            <li><a href="./sorter.html">Sort</a></li>
-        </ul>
+        <div class="title">Sortify</div>
+        <div class="nav-buttons">
+            <button class="about">About</button>
+            <button class="sort">Sort</button>
+        </div>
     </div>
 
-    
+    <div class="deck">
+        <div class="algorithms">
+            <button class="sort-button bubble" data-algorithm="bubbleSort">Bubble Sort</button>
+            <button class="sort-button insertion" data-algorithm="insertionSort">Insertion Sort</button>
+            <button class="sort-button selection" data-algorithm="selectionSort">Selection Sort</button>
+            <button class="sort-button quick" data-algorithm="quickSort">Quick Sort</button>
+            <button class="sort-button merge" data-algorithm="mergeSort">Merge Sort</button>
+        </div>
+
+        <div class="gui">
+            <div class="options">
+                <button class="generate">Generate New Array</button>
+                <button class="start">Start</button>
+            </div>
+            <canvas id="sortingCanvas" width="500" height="350"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
