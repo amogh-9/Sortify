@@ -1,0 +1,122 @@
+html, body {
+    margin: 0; /* Remove default margin */
+    font-family: 'Outfit', sans-serif;
+}
+
+.nav-bar {
+    background-color: #185519;
+    padding: 30px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title {
+    color: white;
+    background-color: #185519;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.nav-buttons{
+    background-color: #185519;
+}
+
+.nav-buttons button {
+    height: 60px;
+    transition-duration: 0.1s;
+    background-color: #185519;
+    color: white;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover {
+    background-color: #C0EBA6; 
+    color: #FFF6EA;
+}
+
+.deck {
+    margin: 60px 0 20px 0;
+    background-color: #C0EBA6;
+}
+
+.deck button {
+    border-radius: 10%;
+    padding: 30px;
+}
+
+.algorithms {
+    text-align: center;
+}
+
+.algorithms button {
+    border: none;
+    border-radius: 20px;
+    background-color: #D3EE98;
+    color: #185519;
+    font-size: 20px;
+}
+
+.algorithms button:hover {
+    background-color: #185519;
+    color: #FFF6EA;
+}
+
+.algorithms button.selected {
+    background-color: #185519; /* Same color as hover */
+    color: white;
+    pointer-events: none; /* Disable pointer events for selected button */
+}
+
+.gui {
+    margin-top: 60px;
+    display: flex;
+    gap: 300px;
+    height: 300px;
+    width: 100vh;
+}
+
+.options {
+    background-color: #72BF78;
+    border-radius: 20px;
+    padding:50px 50px ;
+}
+.options .generate {
+    padding: 10px 30px;
+    border: none;
+    background-color: #185519;
+    color: #F5F7F8;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: Outfit;
+  
+}
+
+.options .start {
+    margin-top: 50px;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #185519;
+    color: #F5F7F8;
+    font-family: Outfit;
+    font-size: 30px;
+    
+}
+
+.options button:hover {
+    background-color: #C0EBA6; 
+    color: #185519;
+}
+
+* {
+    background-color: #C0EBA6;
+}
+
+
